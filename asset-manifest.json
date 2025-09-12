@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/petreactjs/static/css/main.20cd81bb.css",
-    "main.js": "/petreactjs/static/js/main.29af83b6.js",
-    "static/media/video.mp4": "/petreactjs/static/media/video.16d7f769affdda5bd6aa.mp4",
-    "static/media/2.png": "/petreactjs/static/media/2.c0163a1f5e660ca5934f.png",
-    "static/media/1.jpg": "/petreactjs/static/media/1.e407a47acbb962e0dc5c.jpg",
-    "static/media/dog4.png": "/petreactjs/static/media/dog4.4bc29f71b4cd288c4c24.png",
-    "static/media/dog3.png": "/petreactjs/static/media/dog3.540a0e82da7b7aa307bf.png",
-    "static/media/dog7.png": "/petreactjs/static/media/dog7.c3fe4fdb2ac3a84c66bf.png",
-    "static/media/dog2.png": "/petreactjs/static/media/dog2.610228d028b8fbb62d7d.png",
-    "static/media/dog6.png": "/petreactjs/static/media/dog6.636669752d0c32824505.png",
-    "index.html": "/petreactjs/index.html",
-    "main.20cd81bb.css.map": "/petreactjs/static/css/main.20cd81bb.css.map",
-    "main.29af83b6.js.map": "/petreactjs/static/js/main.29af83b6.js.map"
+    "main.css": "/petjs/static/css/main.20cd81bb.css",
+    "main.js": "/petjs/static/js/main.84f7d96e.js",
+    "static/media/video.mp4": "/petjs/static/media/video.16d7f769affdda5bd6aa.mp4",
+    "static/media/2.png": "/petjs/static/media/2.c0163a1f5e660ca5934f.png",
+    "static/media/1.jpg": "/petjs/static/media/1.e407a47acbb962e0dc5c.jpg",
+    "static/media/dog4.png": "/petjs/static/media/dog4.4bc29f71b4cd288c4c24.png",
+    "static/media/dog3.png": "/petjs/static/media/dog3.540a0e82da7b7aa307bf.png",
+    "static/media/dog7.png": "/petjs/static/media/dog7.c3fe4fdb2ac3a84c66bf.png",
+    "static/media/dog2.png": "/petjs/static/media/dog2.610228d028b8fbb62d7d.png",
+    "static/media/dog6.png": "/petjs/static/media/dog6.636669752d0c32824505.png",
+    "index.html": "/petjs/index.html",
+    "main.20cd81bb.css.map": "/petjs/static/css/main.20cd81bb.css.map",
+    "main.84f7d96e.js.map": "/petjs/static/js/main.84f7d96e.js.map"
   },
   "entrypoints": [
     "static/css/main.20cd81bb.css",
-    "static/js/main.29af83b6.js"
+    "static/js/main.84f7d96e.js"
   ]
 }

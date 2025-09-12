@@ -1,0 +1,215 @@
+:root {
+  --PrimaryColor: #de8ebe;
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --whiteColor: #fff;
+  --blackColor: #222;
+  --cardBG: #fff;
+  --cardHover: #f6ecf7;
+  --shadow: 0 2px 12px rgba(180, 140, 180, 0.08);
+  --borderColor: #ececec;
+  --mainSpacing: 2rem;
+  --cardRadius: 1rem;
+  --cardGap: 1.1rem;
+  --btnHeight: 40px;
+  --sideSpace: 3.5rem; // khoảng trống trái phải giống footer
+  --contentMaxWidth: 1200px;
+}
+
+.main.container.section {
+  width: 100%;
+  padding-bottom: var(--mainSpacing);
+  /* Thêm padding trái phải và max-width như footer */
+  padding-left: var(--sideSpace);
+  padding-right: var(--sideSpace);
+  max-width: var(--contentMaxWidth);
+  margin: 0 auto;
+
+  .secTitle {
+    text-align: center;
+    margin-bottom: 1rem;
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--PrimaryColor);
+      position: relative;
+      letter-spacing: 2px;
+      &:after {
+        content: '';
+        display: block;
+        margin: 0.5rem auto 0;
+        width: 60px;
+        height: 4px;
+        background: var(--SecondaryColor);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .secContent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--cardGap);
+    justify-content: center;
+
+    .card {
+      background: var(--cardBG);
+      border-radius: var(--cardRadius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s, background 0.2s;
+      border: 1px solid var(--borderColor);
+
+      &:hover {
+        background: var(--cardHover);
+        box-shadow: 0 6px 24px rgba(180, 140, 180, 0.14);
+      }
+
+      &__img {
+        width: 100%;
+        height: 230px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; // Ảnh full card, không dư trắng
+          display: block;
+          transition: transform 0.3s;
+        }
+        &:hover img {
+          transform: scale(1.05);
+        }
+      }
+
+      &__body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        min-height: 180px;
+        height: 100%;
+
+        .card__top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 0.5rem;
+
+          .card__title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--blackColor);
+            word-break: break-word;
+          }
+          .card__location {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            color: var(--SecondaryColor);
+            font-size: 0.99rem;
+            .icon {
+              font-size: 1.1rem;
+            }
+          }
+        }
+
+        .card__desc {
+          font-size: 0.95rem;
+          color: #444;
+          margin-bottom: 1rem;
+          flex: 1;
+          word-break: break-word;
+        }
+
+        .card__bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: auto;
+          flex-wrap: wrap;
+          gap: 0.2rem;
+          min-height: var(--btnHeight);
+        }
+
+        .card__price {
+          font-size: 1.15rem;
+          font-weight: bold;
+          color: var(--PrimaryColor);
+          word-break: break-word;
+        }
+
+        .card__btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--SecondaryColor);
+          color: var(--whiteColor);
+          border: none;
+          border-radius: 1.5rem;
+          padding: 0.4rem 1.3rem;
+          font-size: 0.98rem;
+          font-weight: 600;
+          gap: 0.5rem;
+          cursor: pointer;
+          min-width: 100px; // Đảm bảo không mất chữ
+          height: var(--btnHeight);
+          box-sizing: border-box;
+          transition: background 0.2s;
+          .icon {
+            font-size: 1.15rem;
+          }
+          &:hover {
+            background: var(--PrimaryColor);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 3 card 1 hàng ở màn hình nhỏ hơn */
+@media (max-width: 900px) {
+  .main.container.section {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .main.container.section .secContent {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.9rem;
+    .card {
+      min-width: 0;
+    }
+  }
+}
+
+/* 2 card 1 hàng ở màn hình mobile (430px) */
+@media (max-width: 500px) {
+  .main.container.section {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .main.container.section .secContent {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
+  }
+  .main.container.section .secContent .card {
+    width: 100%;
+  }
+  .main.container.section .secTitle .title {
+    font-size: 1.3rem;
+  }
+  .main.container.section .secContent .card__btn {
+    min-width: 90px;
+    font-size: 0.95rem;
+    padding: 0.35rem 1rem;
+  }
+}
+
+/* 1 card 1 hàng ở màn hình siêu nhỏ */
+@media (max-width: 340px) {
+  .main.container.section .secContent {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,212 @@
+:root{
+  --PrimaryColor: #de8ebe;
+  --SecondaryColor: #13b3c9;
+  --grabberColor: linear-gradient(to right, #c36fa0, #f0c1d4, hsl(187, 85%, 43%));
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --headerBG: linear-gradient(90deg, #de8ebe 0%, #f7b4e4 100%);
+  --shadow: 0 2px 16px rgba(220, 142, 190, 0.10);
+  --sideSpace: 3.5rem;
+  --headerMaxWidth: 1200px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  background: var(--headerBG);
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.14s;
+
+  .headerInner {
+    width: 100%;
+    max-width: var(--headerMaxWidth);
+    margin: 0 auto;
+    padding: 0.7rem var(--sideSpace);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .logoDiv {
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      h1 {
+        font-size: 1.7rem;
+        color: var(--whiteColor);
+        font-weight: 700;
+        letter-spacing: 2px;
+        .icon {
+          font-size: 2.2rem;
+          margin-right: 0.7rem;
+          color: var(--SecondaryColor);
+          vertical-align: middle;
+          filter: drop-shadow(0 2px 6px #fff8);
+        }
+      }
+    }
+  }
+
+  /* NAV MENU */
+  .navBar {
+    display: flex;
+    align-items: center;
+    ul.navList {
+      display: flex;
+      gap: 2.2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .navItem {
+        .navLink {
+          color: var(--whiteColor);
+          font-size: 1.07rem;
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-decoration: none;
+          padding: 0.15rem 0.7rem;
+          border-radius: 1.5rem;
+          transition: background 0.18s, color 0.18s;
+          &:hover {
+            background: var(--SecondaryColor);
+            color: var(--whiteColor);
+          }
+        }
+      }
+      .btn {
+        background: var(--SecondaryColor);
+        color: var(--whiteColor);
+        border: none;
+        padding: 0.5rem 1.4rem;
+        border-radius: 2rem;
+        font-weight: 700;
+        font-size: 1.05rem;
+        cursor: pointer;
+        box-shadow: 0 2px 8px #13b3c922;
+        letter-spacing: 1px;
+        transition: background 0.18s, color 0.18s;
+        &:hover {
+          background: #de8ebe;
+          color: #fff;
+        }
+      }
+    }
+    .closeNavbar {
+      display: none;
+    }
+  }
+
+  /* NÚT MENU MOBILE */
+  .toggleNavbar {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    .icon {
+      font-size: 2rem;
+      color: var(--whiteColor);
+      transition: color 0.18s;
+    }
+    &:hover .icon {
+      color: var(--SecondaryColor);
+    }
+  }
+}
+
+/* Responsive: padding, vị trí nút menu */
+@media (max-width: 1200px) {
+  .headerInner {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+@media (max-width: 900px) {
+  .headerInner {
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .headerInner {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .navBar {
+    position: absolute;
+    background: var(--headerBG);
+    height: max-content;
+    width: 80vw;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    top: -500rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    box-shadow: var(--shadow);
+    transition: top .15s ease-in-out;
+
+    ul.navList {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      margin: auto;
+      padding: .5rem 0;
+      gap: 0.7rem;
+      .navItem {
+        padding: .4rem 0;
+        .navLink {
+          color: var(--blackColor) !important; /* SỬA CHỮ THÀNH ĐEN MOBILE */
+          font-size: 1rem;
+          font-weight: 700;
+          background: var(--whiteColor);
+          border-radius: 1.5rem;
+          text-align: center;
+          transition: background 0.18s, color 0.18s;
+          &:hover {
+            background: var(--SecondaryColor);
+            color: var(--whiteColor) !important;
+          }
+        }
+      }
+      .btn {
+        margin-top: 1rem;
+        width: 100%;
+      }
+    }
+    .closeNavbar {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      color: var(--SecondaryColor);
+      cursor: pointer;
+      .icon {
+        font-size: 2rem;
+      }
+      &:hover {
+        color: var(--PrimaryColor);
+      }
+    }
+  }
+  .activeNavbar {
+    top: 4.5rem;
+  }
+  .toggleNavbar {
+    display: block !important;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3000;
+  }
+}

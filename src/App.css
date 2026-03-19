@@ -1,5 +1,9 @@
+@import "./pages/petjs-pages.css";
 body {
-  background: #de8ebe;
+  background:
+    radial-gradient(1200px 600px at 10% 0%, rgba(222, 142, 190, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, rgba(14, 165, 183, 0.16), transparent 55%),
+    #f6f7fb;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 

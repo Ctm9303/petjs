@@ -1,7 +1,5 @@
 import React from 'react';
 import './footer.scss';
-import { FiSend } from "react-icons/fi";
-import video from '../../Assest/video.mp4';
 
 // Các ảnh chó demo, cần đúng đường dẫn Assest/dog1.png ...
 import dog1 from '../../Assest/dog1.png';
@@ -36,25 +34,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="videoDiv">
-                <div className="video-overlay">
-                    <video src={video} muted autoPlay loop type="video/mp4"></video>
-                    <div className="video-text">
-                        <small>Contact Us</small>
-                        <h2>Pet with us</h2>
-                    </div>
-                </div>
-            </div>
-
             <div className="secContent container">
-                <div className="contactDiv flex">
-                    <div className="inputDiv flex">
-                        <input type="text" placeholder='Enter Email Address' />
-                        <button className='btn flex' type='submit'>
-                            SEND <FiSend className="icon"/>
-                        </button>
-                    </div>
-                </div>
                 <div className="footer-info">
                     <div className="footer-contact">
                         <h4>LIÊN LẠC</h4>

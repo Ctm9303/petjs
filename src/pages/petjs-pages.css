@@ -1,0 +1,528 @@
+.petjs-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.wc-page {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wc-breadcrumb {
+  background: rgba(15, 23, 42, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+}
+
+.wc-breadcrumb-inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: rgba(15, 23, 42, 0.8);
+}
+
+.wc-breadcrumb a {
+  color: rgba(15, 23, 42, 0.9);
+  text-decoration: none;
+}
+
+.wc-breadcrumb-sep {
+  opacity: 0.6;
+}
+
+.wc-title {
+  font-size: 34px;
+  margin: 8px 0 18px;
+  letter-spacing: 0.5px;
+}
+
+.wc-subtitle {
+  margin: 22px 0 12px;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+}
+
+.wc-muted {
+  opacity: 0.7;
+  font-size: 13px;
+}
+
+.wc-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 18px;
+  background: #2a2a2a;
+  color: white;
+  cursor: pointer;
+}
+
+.wc-btn-outline {
+  background: transparent;
+  color: #2a2a2a;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+.wc-btn-small {
+  padding: 8px 14px;
+  font-size: 13px;
+}
+
+.wc-products {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 18px;
+}
+
+.wc-sidebar {
+  display: grid;
+  gap: 14px;
+}
+
+.wc-widget {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  padding: 14px;
+}
+
+.wc-widget-title {
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+}
+
+.wc-cat {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.wc-cat li {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.wc-products-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.wc-tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.wc-tool {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.wc-tool select,
+.wc-tool input {
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  background: white;
+}
+
+.wc-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.wc-product-card {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.wc-product-img img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+.wc-product-body {
+  padding: 12px;
+  display: grid;
+  gap: 6px;
+}
+
+.wc-sku {
+  font-size: 11px;
+  opacity: 0.55;
+}
+
+.wc-product-name {
+  color: rgba(15, 23, 42, 0.92);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.wc-price {
+  color: #c06aa0;
+  font-weight: 800;
+}
+
+.wc-contact-map {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+}
+
+.wc-contact-map iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  display: block;
+}
+
+.wc-contact-info {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  background: white;
+  padding: 18px;
+  margin-top: 14px;
+}
+
+.wc-contact-info-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.wc-contact-label {
+  color: #c06aa0;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  margin-bottom: 6px;
+}
+
+.wc-contact-form {
+  max-width: 520px;
+}
+
+.wc-form-field input,
+.wc-form-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  background: white;
+}
+
+.wc-success {
+  color: #1e7a3a;
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.petjs-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.petjs-page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.petjs-muted {
+  opacity: 0.75;
+}
+
+.petjs-price {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.petjs-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.petjs-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.petjs-btn-primary {
+  background: #2d8cff;
+  color: white;
+  border-color: #2d8cff;
+}
+
+.petjs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.petjs-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  background: white;
+}
+
+.petjs-card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.petjs-card-body {
+  padding: 12px;
+}
+
+.petjs-card-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.petjs-card-sub {
+  opacity: 0.75;
+  margin-top: 2px;
+}
+
+.petjs-card-price {
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+.petjs-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.petjs-detail {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.petjs-detail-img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.petjs-detail-body {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  padding: 16px;
+  background: white;
+}
+
+.petjs-form {
+  display: grid;
+  gap: 10px;
+  max-width: 420px;
+}
+
+.petjs-form input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.petjs-form textarea,
+.petjs-checkout textarea {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  resize: vertical;
+}
+
+.petjs-panel {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 40px rgba(16, 24, 40, 0.06);
+  padding: 16px;
+}
+
+.petjs-h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.petjs-checkout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 18px;
+}
+
+.petjs-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.petjs-field {
+  display: grid;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.petjs-field input,
+.petjs-field textarea {
+  width: 100%;
+}
+
+.petjs-divider {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  margin: 14px 0;
+}
+
+.petjs-order {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.petjs-order-head,
+.petjs-order-row,
+.petjs-order-total {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding: 12px;
+}
+
+.petjs-order-head {
+  background: rgba(15, 23, 42, 0.04);
+  font-weight: 700;
+}
+
+.petjs-order-row {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.petjs-order-total {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(222, 142, 190, 0.06);
+  font-weight: 800;
+}
+
+.petjs-order-price {
+  font-weight: 800;
+}
+
+.petjs-pay-hint {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.04);
+  color: rgba(15, 23, 42, 0.8);
+}
+
+.petjs-checkbox,
+.petjs-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+}
+
+.petjs-search input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  min-width: 260px;
+}
+
+.petjs-cart {
+  display: grid;
+  gap: 10px;
+}
+
+.petjs-cart-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  background: white;
+}
+
+.petjs-cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 900px) {
+  .petjs-detail {
+    grid-template-columns: 1fr;
+  }
+  .petjs-search input {
+    min-width: 180px;
+  }
+  .petjs-checkout {
+    grid-template-columns: 1fr;
+  }
+  .petjs-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .wc-products {
+    grid-template-columns: 1fr;
+  }
+  .wc-products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .wc-contact-info-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .wc-products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
